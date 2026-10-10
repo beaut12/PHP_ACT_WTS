@@ -1,0 +1,339 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+}
+
+body {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+.login-page {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(55, 35, 20, 0.35),
+            rgba(55, 35, 20, 0.35)
+        ),
+        url("images/coffee-morning.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+.register-page {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(
+            rgba(20, 15, 12, 0.45),
+            rgba(20, 15, 12, 0.45)
+        ),
+        url("images/coffee-night.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    background-attachment: fixed;
+}
+
+
+.page-container {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 40px 20px;
+}
+
+
+.login-card,
+.register-card {
+    width: 100%;
+    max-width: 430px;
+    padding: 35px 40px;
+    background-color: rgba(255, 248, 238, 0.94);
+
+    border: 1px solid rgba(90, 60, 35, 0.4);
+    border-radius: 18px;
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.30);
+}
+
+
+.brand-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.brand-header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: #4b2e1f;
+}
+
+.brand-header p {
+    margin: 7px 0 0;
+    font-size: 14px;
+    font-style: italic;
+    color: #7a5a43;
+}
+
+
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-header h2 {
+    margin: 0 0 6px;
+    font-size: 25px;
+    color: #3d261a;
+}
+
+.form-header p {
+    margin: 0;
+    font-size: 14px;
+    color: #765b47;
+}
+
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #4b2e1f;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #c9ad93;
+    border-radius: 8px;
+    background-color: #fffdf9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #8b5e3c;
+}
+
+
+.form-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 5px 0 20px;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #5c4635;
+}
+
+.remember-me input {
+    accent-color: #795548;
+}
+
+.form-options a,
+.account-link a {
+    color: #71452d;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.form-options a:hover,
+.account-link a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+
+    background-color: #6f4e37;
+    color: white;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #553a28;
+}
+
+
+.account-link {
+    margin: 22px 0 0;
+
+    text-align: center;
+
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+
+    color: #5c4635;
+}
+
+
+.register-card {
+    max-width: 450px;
+}
+
+
+@media (max-width: 600px) {
+
+    .page-container {
+        padding: 25px 15px;
+    }
+
+    .login-card,
+    .register-card {
+        padding: 28px 22px;
+        border-radius: 14px;
+    }
+
+    .brand-header h1 {
+        font-size: 25px;
+    }
+
+    .form-header h2 {
+        font-size: 22px;
+    }
+
+    .form-group input {
+        padding: 11px 12px;
+    }
+}
+
+.site-navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 14px;
+    background-color: rgba(75, 46, 31, 0.92);
+}
+
+.site-navigation a {
+    color: #fff8ee;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.site-navigation a:hover {
+    text-decoration: underline;
+}
+
+.site-footer {
+    padding: 12px;
+    text-align: center;
+    color: #fff8ee;
+    background-color: rgba(75, 46, 31, 0.92);
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+.home-page {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(55, 35, 20, 0.35),
+            rgba(55, 35, 20, 0.35)
+        ),
+        url("images/coffee-morning.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.home-card {
+    width: 100%;
+    max-width: 500px;
+    padding: 35px;
+    text-align: center;
+    background-color: rgba(255, 248, 238, 0.94);
+    border: 1px solid rgba(90, 60, 35, 0.4);
+    border-radius: 18px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.30);
+}
+
+.home-card h2 {
+    color: #4b2e1f;
+}
+
+.home-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.home-links a {
+    padding: 12px;
+    color: white;
+    background-color: #6f4e37;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.home-links a:hover {
+    background-color: #553a28;
+}
+
+.validation-message {
+    padding: 10px;
+    color: #6b271e;
+    background-color: #f9e5df;
+    border: 1px solid #d7a69a;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+    .home-card {
+        padding: 25px 20px;
+    }
+
+    .site-navigation {
+        gap: 16px;
+    }
+}
